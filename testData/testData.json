@@ -1,0 +1,13 @@
+{
+	"TC_01": {
+		"username" : "RWSUser_q4_0224124427",
+		"password": "imcportal@1",
+		"welcomeMessage" : "Welcome Message for TestCase1"
+	},
+	"TC_02": {
+		"username" : "RWSUser_q4_0224124427",
+		"password": "imcportal@1",
+		"welcomeMessage" : "Welcome Message for TestCase2"
+	}
+	
+}

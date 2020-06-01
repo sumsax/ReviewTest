@@ -1,0 +1,23 @@
+{
+          "BtnAddUser" : ["//*[text()=' Add User']", "xpath"],
+          "TxtFirstName": ["//input[@name='FirstName']" , "xpath"],
+          "TxtLastName": ["//input[@name='LastName']" , "xpath"],
+
+          "TxtUserName": ["//input[@name='UserName']" , "xpath"],
+
+          "TxtPassword": ["//input[@name='password']" , "xpath"],
+
+          "BtnCompany": ["//input[@type='radio']" , "xpath"],
+          "BtnRole": ["//select[@name='RoleId']" , "xpath"],
+
+          "TxtEmail": ["//input[@name='Email']" , "xpath"],
+          "TxtMobileNumber": ["//input[@name='Mobilephone']" , "xpath"],
+          "BtnSave": [" //button[@class='btn btn-success']","xpath"],
+               
+          
+          "copyEntry" : ["", ""]
+          
+         
+       
+          
+          }

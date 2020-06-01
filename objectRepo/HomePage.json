@@ -1,0 +1,10 @@
+{
+"BtnLogout": [".auto-test-btnLogout","css"],
+"LnkProfile": [".auto-test-btnProfile","css"],
+"LnkIronMtnInsight": [".auto-test-quicklinks-rmaas","css"],
+"LblReviewingAccountInventory": ["//li[text()='Reviewing account inventory']","xpath"],
+"LnkEscrowManagement": [".auto-test-quicklinks-escrow","css"],
+"escrow": ["escrow","id"],
+"DepositAccountNameText": ["//th[text()='Deposit Account Name']","xpath"],
+"LblReviewingAccountInventoryOld": ["//li[contains(.,'Reviewing account inventory')]","xpath"]
+}

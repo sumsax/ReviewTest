@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "inlineSourceMap": false,
+      "declaration": false,
+      "removeComments": false,
+      "noImplicitAny": false,
+      "outDir": "./JSFiles",
+      "esModuleInterop": true,
+      "resolveJsonModule": true
+    },
+    "exclude": [
+      "node_modules"
+    ]
+  }
