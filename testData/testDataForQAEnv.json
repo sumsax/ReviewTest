@@ -13,10 +13,10 @@
 	},
 
 	
-	"NIIT-002" : {
-
+	"TC_002_Add_New_User" : {
+		"firstName" : "Tom"
 	}
 	
-
+   
 	
 }

@@ -63,7 +63,7 @@ Then(/^User waits for "([^"]*)" to get displayed$/, async (elementReference:stri
 
 Then(/^User waits for "([^"]*)" text to get displayed from element "([^"]*)"$/, async (text:string, elementReference:string)=>{
   console.log("User waits for "+ elementReference +" to get displayed");
-  return (await basePage.waitForElementToDisplay(elementReference,30000)).getText().then(function(textOnPage:string){
+  return (await basePage.waitForElementToDisplay(elementReference,60000)).getText().then(function(textOnPage:string){
     if(textOnPage == basePage.getTestData(text)){
       return console.log(text + " displayed on page and pass");
     } else if(textOnPage != text){

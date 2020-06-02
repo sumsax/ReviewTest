@@ -21,7 +21,8 @@ Then(/^User lists out the number of recent users$/,{timeout: 180 * 1000}, async 
 
 Then(/^User waits for User "([^"]*)" name "([^"]*)" to get displayed in User Table$/, async (elementReference:string, userName:string)=>{
     console.log("User wait for "+ elementReference +" to get displayed on home page");
+    //expect(element(by.xpath('//table[@table-title="Smart Table example"]/tbody/tr[1]/td[1]')).getText()).to.equal("Tom");
     return (await addUserPage.waitForDynamicElementToDisplay(elementReference, addUserPage.getTestData(userName), 30000)).getText().then(function(text:string){
-    console.log(text + " displayed on page and pass");
+       
     });
 });  
