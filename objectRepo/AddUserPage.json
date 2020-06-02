@@ -9,7 +9,8 @@
           "TxtEmail": ["input[name='Email']" , "css"],
           "TxtMobileNumber": ["input[name='Mobilephone']" , "css"],
           "BtnSave": ["button.btn.btn-success","css"],
-             
+          "newAddedUserInfo": ["//table[@table-title='Smart Table example']/tbody/tr[1]/td","css"],
+          "deleteUser": ["//table[@table-title='Smart Table example']/tbody/tr[1]/td[11]//i[@class='icon icon-remove']","css"],
           
           "copyEntry" : ["", ""]
           

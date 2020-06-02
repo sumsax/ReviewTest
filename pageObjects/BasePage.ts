@@ -457,7 +457,7 @@ expect.fail();
     }
    }
 
-  //Anjali for selecting drop down
+  //selecting drop down
     async selectTextFromDropDown(dropDownSelector:string,value:string) {
           try {
              await browser.sleep(500);
@@ -468,7 +468,21 @@ expect.fail();
          expect.fail();
           }
       }
-    //Anjali - pending
+
+    async selectTextFromDropDownUSingOption(dropDownSelector:string,value:string) {
+          try {
+             await browser.sleep(500);
+           element(by.css("select#first")).then(function(element){
+                browser.executeScript("arguments[0].value='Yahoo'", element);
+            })
+          } catch (e) {
+        console.error("Failed to select " +value+ " in " + dropDownSelector);
+         expect.fail();
+          }
+      }
+
+    
+    //pending
      async SuggestionSelectionTextbox(objElement:ElementFinder,value:string,valueResult:string) {
           try {
              await browser.sleep(500);
