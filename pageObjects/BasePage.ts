@@ -55,8 +55,7 @@ export class BasePage {
   }
 
   static AllObjectsPath = [
-    'HomePage',
-    'LoginPage',
+    
     'AddUserPage'
   ];
 

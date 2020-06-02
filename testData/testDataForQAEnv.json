@@ -4,9 +4,8 @@
 	"TC_001_Add_New_User" : {
 		"firstName" : "Sumit",
 		"lastName" : "Saxena",
-		"country" : "Great Land of India",
 		"email" : "sumittest@gmail.com",
-		"role" : "00792282",
+		"role" : "Admin",
 		"mobile" : "8707592485",
 		"username" : "sumsax",
 		"password" : "test123"

@@ -3,7 +3,7 @@
           "TxtFirstName": ["input[name='FirstName']" , "css"],
           "TxtLastName": ["input[name='LastName']" , "css"],
           "TxtUserName": ["input[name='UserName']" , "css"],
-          "TxtPassword": ["input[name='password']" , "css"],
+          "TxtPassword": ["input[name='Password']" , "css"],
           "BtnCompany": ["input[type='radio']" , "css"],
           "BtnRole": ["c.Value as c.Text for c in column.options" , "options"],
           "TxtEmail": ["input[name='Email']" , "css"],
