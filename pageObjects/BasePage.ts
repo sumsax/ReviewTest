@@ -13,7 +13,7 @@ const environmentData = JSON.parse(fs.readFileSync('./testData/environments.json
 let EC = ExpectedConditions;
 
 export class BasePage {
-  //Hari - Takes url as parameter to open the site
+  // Takes url as parameter to open the site
    async enterUrl(text: string) {
     try{
     await browser.get(properties.get(text));
@@ -50,9 +50,8 @@ export class BasePage {
     }
   }
 
-  static AllObjectsPath = [
-    
-    'AddUserPage'
+  static AllObjectsPath = [    
+    'ObjectRepo'
   ];
 
   static getObjectData(reference:string){

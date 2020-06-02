@@ -1,5 +1,4 @@
 @sanity
-@TC_001_Add_New_User
 Feature: TC_001_Add_New_User
 
 

@@ -18,7 +18,7 @@ export let config: Config = {
        getPageTimeout : prop.get('getPageTimeout'),
        allScriptsTimeout : prop.get('allScriptsTimeout'), 
     // Capabilities to be passed to the webdriver instance.
-    multiCapabilities: [{
+       multiCapabilities: [{
       "browserName": prop.get('browserName'),
       'maxInstances': 1,
       //'shardTestFiles' : true,

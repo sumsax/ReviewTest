@@ -1,0 +1,17 @@
+{
+          "LnkAddUser" : [" Add User", "linktext"],
+          "TxtFirstName": ["input[name='FirstName']" , "css"],
+          "TxtLastName": ["input[name='LastName']" , "css"],
+          "TxtUserName": ["input[name='UserName']" , "css"],
+          "TxtPassword": ["input[name='Password']" , "css"],
+          "RadioCompany": ["input[type='radio']" , "css"],
+          "DropDownRole": ["c.Value as c.Text for c in column.options" , "options"],
+          "TxtEmail": ["input[name='Email']" , "css"],
+          "TxtMobileNumber": ["input[name='Mobilephone']" , "css"],
+          "BtnSave": ["button.btn.btn-success","css"],
+          "BtnDeleteUserConfirmation": ["//button[text()='OK']","xpath"],
+
+
+          "NewAddedUserInfo": ["//table[@table-title='Smart Table example']/tbody/tr[1]/td[1]","xpath"],
+          "IcondeleteUser": ["//table[@table-title='Smart Table example']/tbody/tr[1]/td[11]//i[@class='icon icon-remove']","xpath"],
+  }
