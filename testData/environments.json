@@ -7,23 +7,7 @@
                   
                     "dataFile" : "./testData/testDataForQAEnv.json"
 	     },
-
-          "qa1": {
-                    "flag" : false,
-                    "envName" : "qa1",
-                    "url" : "http://www.way2automation.com/angularjs-protractor/webtables/",
-                    "userDetails": ["TestQA1", "TestQA1"],
-                    "dataFile" : "./testData/nodata.json"
-          },
-          
-          "qa2": {
-                    "flag" : false,
-                    "envName" : "qa2",
-                    "url" : "http://www.way2automation.com/angularjs-protractor/webtables/",
-                    "userDetails": ["nodata", "nodata"],
-                    "dataFile" : "./testData/nodata.json"
-          },
-          
+         
           "QA": {
                     "flag" : true,
                     "envName" : "QA",

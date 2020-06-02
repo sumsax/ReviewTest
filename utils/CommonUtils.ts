@@ -25,11 +25,7 @@ export class CommonUtils{
         var envTypeData = environmentData.environmentVariables;
         var envDataFromJson: any;
         if(envTypeData.production.flag == true){
-          envDataFromJson = environmentData.environmentVariables.production;
-        } else if(envTypeData.qa1.flag == true){
-          envDataFromJson = environmentData.environmentVariables.qa1;
-        } else if(envTypeData.qa1.flag == true){
-          envDataFromJson = environmentData.environmentVariables.qa2;
+          envDataFromJson = environmentData.environmentVariables.production;      
         } else if(envTypeData.QA.flag == true){
           envDataFromJson = environmentData.environmentVariables.QA;
         }

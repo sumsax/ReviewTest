@@ -40,10 +40,6 @@ export class BasePage {
     var envDataFromJson: any;
     if(envTypeData.production.flag == true){
       envDataFromJson = environmentData.environmentVariables.production;
-    } else if(envTypeData.qa1.flag == true){
-      envDataFromJson = environmentData.environmentVariables.qa1;
-    } else if(envTypeData.qa2.flag == true){
-      envDataFromJson = environmentData.environmentVariables.qa2;
     } else if(envTypeData.QA.flag == true){
       envDataFromJson = environmentData.environmentVariables.QA;
     }

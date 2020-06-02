@@ -62,6 +62,7 @@ Then(/^User waits for "([^"]*)" to get displayed$/, async (elementReference:stri
 });
 
 Then(/^User waits for "([^"]*)" text to get displayed from element "([^"]*)"$/, async (text:string, elementReference:string)=>{
+   await browser.sleep(15000);
   console.log("User waits for "+ elementReference +" to get displayed");
   return (await basePage.waitForElementToDisplay(elementReference,60000)).getText().then(function(textOnPage:string){
     if(textOnPage == basePage.getTestData(text)){
@@ -71,6 +72,15 @@ Then(/^User waits for "([^"]*)" text to get displayed from element "([^"]*)"$/, 
       return console.log("Expected " + text + " not displayed on page");
     }
    });
+});
+
+Then(/^User waits for "([^"]*)" text to get displayed from element "([^"]*)"$/, async (text:string, elementReference:string)=>{
+  await browser.sleep(15000);
+ console.log("User waits for "+ elementReference +" to get displayed");
+    var el = element(by.css);
+    el.getText().then(function(text) {
+      console.log(text);
+    });
 });
 
 Then(/^User verifies the presence of "([^"]*)"$/, async (elementReference:string)=>{

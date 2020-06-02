@@ -91,7 +91,7 @@ export let config: Config = {
             customData:{
               title: 'ExecutionInfo',
               data:[
-                {label: 'Project', value: 'Protractor Automation'},
+                {label: 'Project', value: 'Test Automation'},
                 {label: 'Release', value: '1.0'},
                 {label: 'Env', value: cu.getJsonDataForEnvDetailsForConfig()['envName']},
                 {label: 'URL', value: "<a href ="+cu.getJsonDataForEnvDetailsForConfig()['url']+">"+cu.getJsonDataForEnvDetailsForConfig()['url']+"</a>"},

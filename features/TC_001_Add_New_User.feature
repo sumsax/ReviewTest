@@ -21,13 +21,14 @@ Feature: TC_001_Add_New_User
         #      Then User clicks on "BtnCompany" button
 
 
-        Scenario: Verify Newly Added User in User Table and CLose Functionality
+        Scenario: Verify Newly Added User in User Table and Close Functionality
 
             Given User reads the TestCaseID "TC_002_Add_New_User"
-            #  And User waits for User "newAddedUserFistName" name "firstName" to get displayed in User Table
+             Then User waits for "newAddedUserInfo" text to get displayed from element "newAddedUserInfo"
+           #  And User waits for User "newAddedUserFistName" name "firstName" to get displayed in User Table
               And  User clicks on "IcondeleteUser"
               And  User clicks on "BtnDeleteUserOK"
-             # And User waits for "newAddedUserFistName" text to get displayed from element "firstName"
+             # And User waits for "" text to get displayed from element "firstName"
 
 
             
