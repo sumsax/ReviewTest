@@ -26,6 +26,7 @@ Feature: TC_001_Add_New_User
             Given User reads the TestCaseID "TC_002_Add_New_User"
             #  And User waits for User "newAddedUserFistName" name "firstName" to get displayed in User Table
               And  User clicks on "IcondeleteUser"
+              And  User clicks on "BtnDeleteUserOK"
              # And User waits for "newAddedUserFistName" text to get displayed from element "firstName"
 
 
