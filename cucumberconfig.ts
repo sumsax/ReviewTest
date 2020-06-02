@@ -84,14 +84,14 @@ export let config: Config = {
             automaticallyGenerateReport: true,
             openReportInBrowser: true,
             removeExistingJsonReportFile: true,
-            reportName: 'Polaris Automation Tests',
-            pageFooter: '<div><p>Polaris Automation Project</p></div>',
+            reportName: 'NIIT Tests',
+            pageFooter: '<div><p>Automation Project</p></div>',
             pageTitle: 'AutomationScripts',
             launchReport: true,
             customData:{
               title: 'ExecutionInfo',
               data:[
-                {label: 'Project', value: 'CSP Automation'},
+                {label: 'Project', value: 'Protractor Automation'},
                 {label: 'Release', value: '1.0'},
                 {label: 'Env', value: cu.getJsonDataForEnvDetailsForConfig()['envName']},
                 {label: 'URL', value: "<a href ="+cu.getJsonDataForEnvDetailsForConfig()['url']+">"+cu.getJsonDataForEnvDetailsForConfig()['url']+"</a>"},

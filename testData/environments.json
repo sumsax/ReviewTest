@@ -4,13 +4,7 @@
                     "flag" : false,
                     "envName" : "Production",
 		          "url" :   "http://www.way2automation.com/angularjs-protractor/webtables/",
-                    "userDetails": ["", ""],
-                    "userName1" :"userName1a",
-                    "password1" :"password1a",
-                    "userName2" :"userName2a",
-                    "password2" :"password2a",
-                    "userName3" :"harikrishna",
-                    "password3" :"password3a",
+                  
                     "dataFile" : "./testData/testDataForQAEnv.json"
 	     },
 
@@ -34,13 +28,7 @@
                     "flag" : true,
                     "envName" : "QA",
                     "url" : "http://www.way2automation.com/angularjs-protractor/webtables/",
-                    "userDetails": ["", ""],
-                    "userName1" :"userName1a",
-                    "password1" :"password1a",
-                    "userName2" :"userName2a",
-                    "password2" :"password2a",
-                    "userName3" :"userName3a",
-                    "password3" :"password3a",
+                   
                     "dataFile" : "./testData/testDataForQAEnv.json"
      }
 }

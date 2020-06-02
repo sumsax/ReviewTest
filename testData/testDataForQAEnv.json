@@ -1,10 +1,15 @@
 {
 	
 
-	"NIIT-001" : {
-		"firstName" : "00792282",
-		"lastName" : "00792282",
-		"country" : "00792282"
+	"TC_001_Add_New_User" : {
+		"firstName" : "Sumit",
+		"lastName" : "Saxena",
+		"country" : "Great Land of India",
+		"email" : "sumittest@gmail.com",
+		"role" : "00792282",
+		"mobile" : "8707592485",
+		"username" : "sumsax",
+		"password" : "test123"
 		
 	},
 

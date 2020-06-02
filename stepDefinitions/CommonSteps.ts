@@ -4,6 +4,7 @@ import {browser, element, by, ElementFinder} from 'protractor'
 import {BasePage} from '../pageObjects/BasePage';
 const basePage = new BasePage();
 
+
 import chai = require('chai');
 chai.use(require('chai-smoothie'));
 const expect = chai.expect;
@@ -51,10 +52,13 @@ Then(/^User verifies title "([^"]*)" of the page$/, async (text)=> {
 });
 
 Then(/^User waits for "([^"]*)" to get displayed$/, async (elementReference:string)=>{
-  console.log("User waits for "+ elementReference +" to get displayed");
-   return (await basePage.waitForElementToDisplay(elementReference,30000)).getText().then(function(text:string){
-  console.log(text + " displayed on page and pass");
-   });
+   
+  await basePage.waitForElementToDisplay(elementReference,30000);
+
+  // console.log("User waits for "+ elementReference +" to get displayed");
+  //  return (await basePage.waitForElementToDisplay(elementReference,30000)).getText().then(function(text:string){
+  // console.log(text + " displayed on page and pass");
+  //  });
 });
 
 Then(/^User waits for "([^"]*)" text to get displayed from element "([^"]*)"$/, async (text:string, elementReference:string)=>{

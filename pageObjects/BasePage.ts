@@ -57,7 +57,7 @@ export class BasePage {
   static AllObjectsPath = [
     'HomePage',
     'LoginPage',
-    'PolarisHomePageObjRepo'
+    'AddUserPage'
   ];
 
   static getObjectData(reference:string){
@@ -94,7 +94,7 @@ export class BasePage {
       }
     }
 
-    //sumit, Get Data from json file, Date:  April 17 2020 (Modified - Hari)
+    //sumit, Get Data from json file, Date:
     getTestData(key:string) {
       try {
       const documentTypeData = fs.readFileSync(this.getJsonDataForEnvDetails()['dataFile']);
@@ -176,7 +176,7 @@ async getText(objElement:ElementFinder, text:string){
   }
 }
  
-//Hari - New Generic method which reads data from feature file and gets values from data files and passed accordingly
+// New Generic method which reads data from feature file and gets values from data files and passed accordingly
 async waitForElementToDisplay(objElement:string, timeInSeconds:number){
 try{
   await browser.sleep(500);
@@ -191,7 +191,7 @@ try{
   }
 }
 
-//Hari - New Generic method -2 which reads data from feature file and gets values from data files (concatenate split locators)and passed accordingly
+//New Generic method -2 which reads data from feature file and gets values from data files (concatenate split locators)and passed accordingly
 async waitForDynamicElementToDisplay(objElement:string, text:any, timeInSeconds:number){
   try{
     await browser.sleep(250);
@@ -206,7 +206,7 @@ async waitForDynamicElementToDisplay(objElement:string, text:any, timeInSeconds:
     }
   }
 
-//Hari - New Generic method which reads data from feature file and gets values from data files and passed accordingly
+// New Generic method which reads data from feature file and gets values from data files and passed accordingly
 async waitForElementToDisplayFromTestEnvData(objElement:string, timeInSeconds:number){
   try{
     await browser.sleep(500);
@@ -221,7 +221,7 @@ async waitForElementToDisplayFromTestEnvData(objElement:string, timeInSeconds:nu
     }
   }
   
-//Hari - Generic method which reads data from page file and gets values passed accordingly
+// Generic method which reads data from page file and gets values passed accordingly
 async waitForElementToDisplayPOM(objElement:ElementFinder, timeInSeconds:number){
   try {
     await browser.sleep(500);
@@ -302,7 +302,7 @@ console.error(error + " failed in identifying web element on the page");
 expect.fail();
 }
 }
-//Hari - switches to window based on index value passed from feature file
+//switches to window based on index value passed from feature file
    async switchToWindow(index:number){
      try {
     let windowHandles = browser.getAllWindowHandles();
@@ -333,7 +333,7 @@ expect.fail();
 }
   }
 
-  //Hari - closes opned window by index value passed from feature file
+  // closes opned window by index value passed from feature file
   async closeWindowByIndex(index:number){
    try{
     let windowHandles = await browser.getAllWindowHandles();
@@ -351,7 +351,7 @@ expect.fail();
   }
 }
 
-  //Hari - Accepts OK, Cancel from feature file to perform action on alert popup
+  //Accepts OK, Cancel from feature file to perform action on alert popup
   async handleAlert(action:string){
     try {
     var alertPopup = await browser.switchTo().alert();
@@ -372,7 +372,7 @@ expect.fail();
   }
   }
 
-  //Hari - Scroll to specific element on page
+  //Scroll to specific element on page
   async scrollToElement(elementReference:string){
     try{
     var element = await this.waitForElementToDisplay(elementReference, 30000);
@@ -383,7 +383,7 @@ expect.fail();
     }
   }
 
-  //Hari - switches to frame by name or id passed from feature file, and data read from data file
+  //switches to frame by name or id passed from feature file, and data read from data file
   async switchToFrameByNameOrID(elementReference:string){
     try{
     return await browser.switchTo().frame((await this.waitForElementToDisplay(elementReference, 30000)).getWebElement());    
@@ -423,7 +423,7 @@ expect.fail();
     //   }
     // }
 
-    //Hari - Enter text by id using javascript executor
+    //Enter text by id using javascript executor
     async executeJavaScriptByIdToEnterText(webelement:string, elemRef:string){
       try{
       return await browser.executeScript("document.getElementById(\'"+webelement+"\').value=\'"+elemRef+"\'");
@@ -434,7 +434,7 @@ expect.fail();
     }
    }
    
-    //Hari - Generic Click method using javascript executor - index may need to be changed if more than one element
+    //Generic Click method using javascript executor - index may need to be changed if more than one element
     async executeJavaScriptToClick(webelement:string){
       try{
       var element = await this.waitForElementToDisplay(webelement, 30000);
@@ -446,7 +446,7 @@ expect.fail();
     }
   }
 
-    //Hari - Generic Enter text using javascript executor
+    // Generic Enter text using javascript executor
     async executeJavaScriptToEnterText(webelement:string, text:string){
       try{
         var element = await this.waitForElementToDisplay(webelement, 30000);
@@ -479,7 +479,7 @@ expect.fail();
             e.message;
           }
         } 
-      //Hari - Mouse hover on webelement
+      // Mouse hover on webelement
       async mouseHover(elemReference:string){
         try {
         return await browser.actions().mouseMove(await this.waitForElementToDisplay(elemReference, 30000)).perform();
@@ -497,7 +497,7 @@ expect.fail();
 
 /*
 //Modified methods, can be used later or removed once framework is stabilized
- //Hari - Read data from file in the form of array.  first column is key and remaining are values
+ // Read data from file in the form of array.  first column is key and remaining are values
   static getObjectDataOld(reference: string) {
     var commonFilePath = 'CommonElements';
     var line = fs.readFileSync('./objectRepo/' + commonFilePath + '.txt', "utf-8").toString().split('\n');
@@ -529,7 +529,7 @@ expect.fail();
   }
 
 
-//Hari - Generic method which reads data from feature file and gets values from data files and passed accordingly
+// Generic method which reads data from feature file and gets values from data files and passed accordingly
 async waitForElementToDisplayOld(objElement:string, timeInSeconds:number){
   try{
     await browser.sleep(500);
@@ -548,7 +548,7 @@ async waitForElementToDisplayOld(objElement:string, timeInSeconds:number){
     }
   }
  
-    //Hari - Click method using javascript executor - index may need to be changed if more than one element
+    // Click method using javascript executor - index may need to be changed if more than one element
     async executeJavaScriptByNameToClick(webelement:string){
       try{
       return await browser.executeScript("document.getElementsByName(\'"+webelement+"\')["+0+"].click()");
