@@ -27,7 +27,7 @@
     "jasminewd2": "^2.2.0",
     "moment": "^2.25.3",
     "platform": "^1.3.5",
-    "properties-reader": "^1.0.0",
+    "properties-reader": "^2.2.0",
     "protractor": "^5.4.3",
     "protractor-cucumber-framework": "^6.2.1",
     "protractor-multiple-cucumber-html-reporter-plugin": "^1.8.1",
